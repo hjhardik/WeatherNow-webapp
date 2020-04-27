@@ -16,7 +16,6 @@ body {
   background-size: cover;
   background-position: top center;
   overflow: hidden;   /*to make content stay in one page only and we dont need to have a scroll bar*/
-
 }
 .app-wrap {
   flex-direction: row;
@@ -177,7 +176,6 @@ footer p {
 
 .cleard{
   background-image: url('/images/clearmorning.jpg');
-  transition: 0.2s ease-out;
 }
 .cleard-card{
   /* background: #9CECFB;  /* fallback for old browsers */
@@ -193,7 +191,6 @@ footer p {
 }
 .clearn{
   background-image: url('/images/clearnight.jpg');
-  transition: 0.2s ease-out;
 }
 .clearn-card{
   background: #000428;  /* fallback for old browsers */
@@ -204,8 +201,6 @@ footer p {
 }
 .cloud{
   background-image: url('/images/clouds.jpg');
-  transition: 0.2s ease-out;
-
 }
 .cloud-card{
   background: #DA4453;  /* fallback for old browsers */
@@ -216,7 +211,7 @@ footer p {
 }
 .rain{
   background-image: url('/images/rain.jpg');
-  transition: 0.2s ease-out;}
+}
 .rain-card{
   background: #1F1C2C;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top,rgba(146, 141, 171, .6) ,rgba(31, 28, 44, .6) );  /* Chrome 10-25, Safari 5.1-6 */
@@ -226,17 +221,17 @@ footer p {
 }
 .snow{
   background-image: url('/images/snow.jpg');
-  transition: 0.2s ease-out;}
+}
 .snow-card{
   background: #2980B9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, rgba(255, 255, 255, .6), rgba(109, 213, 250, .6),rgba(41, 128, 185, .6) );  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, rgba(255, 255, 255, .6),rgba(109, 213, 250, .6), rgba(41, 128, 185, .6) ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to top, rgba(255, 255, 255, .8), rgba(109, 213, 250, .6),rgba(41, 128, 185, .6) );  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, rgba(255, 255, 255, .8),rgba(109, 213, 250, .6), rgba(41, 128, 185, .6) ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   transition: 0.4s ease-out;
   background-blend-mode: lighten;
 }
 .sand{
   background-image: url('/images/sand.jpg');
-  transition: 0.2s ease-out;}
+}
 .sand-card{
   background: #C02425;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom,rgba(240, 203, 53, .6) , rgba(192, 36, 37, .6));  /* Chrome 10-25, Safari 5.1-6 */

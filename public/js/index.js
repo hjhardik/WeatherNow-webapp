@@ -20,7 +20,7 @@ function getLocation() {
   function error(){
     document.querySelector(".current .temp").innerHTML = '';
     document.querySelector(".current .weather").innerHTML ='Meanwhile search for other cities ...'
-    document.querySelector(".current .hilow").innerHTML = "Cannot detect your location.";
+    document.querySelector(".current .hilow").innerHTML = "Cannot detect your location.<br>Please allow to access location.";
     document.querySelector(".current .wind span").innerHTML = '';
     document.querySelector(".current .humidity span").innerHTML = '';
     document.querySelector(".location .city").innerHTML = '';
