@@ -14,7 +14,10 @@ body {
   font-family: sans-serif;
   background-image: url('/images/cleard.jpg');
   background-size: cover;
-  background-position: top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   overflow: hidden;   /*to make content stay in one page only and we dont need to have a scroll bar*/
   -webkit-transition: background-image 1.5s;
 }
@@ -240,8 +243,8 @@ footer p {
   transition: 0.4s ease-out;
   background-blend-mode: lighten;
 }
-@media only screen and (max-width: 768px) {
 .card{
+  @media only screen and (max-width: 768px) {
   padding-top: 1%;
   padding-bottom: 1%;
   margin-top: 5%;
@@ -268,6 +271,7 @@ footer p{
   padding-bottom: 2px;
   margin-bottom: 0;
   overflow-y: scroll;
+  overflow-x: scroll;
 }
 }
 
