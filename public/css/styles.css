@@ -249,9 +249,9 @@ body{
   background-repeat: no-repeat;
 }
 .app-wrap{
-  padding-top: 1%;
+  background-color: blue;
+  padding-top: 2%;
   padding-bottom: 2px;
-  margin-bottom: 0;
 }
 .card{
   padding-top: 1%;
