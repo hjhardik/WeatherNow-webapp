@@ -12,10 +12,11 @@
 }
 body {
   font-family: sans-serif;
-  background-image: url('/images/clearmorning.jpg');
+  background-image: url('/images/cleard.jpg');
   background-size: cover;
   background-position: top center;
   overflow: hidden;   /*to make content stay in one page only and we dont need to have a scroll bar*/
+  -webkit-transition: background-image 1.5s;
 }
 .app-wrap {
   flex-direction: row;
@@ -175,7 +176,7 @@ footer p {
 }
 
 .cleard{
-  background-image: url('/images/clearmorning.jpg');
+  background-image: url('/images/cleard.jpg');
 }
 .cleard-card{
   /* background: #9CECFB;  /* fallback for old browsers */
@@ -190,7 +191,7 @@ footer p {
   background-blend-mode: lighten;
 }
 .clearn{
-  background-image: url('/images/clearnight.jpg');
+  background-image: url('/images/clearn.jpg');
 }
 .clearn-card{
   background: #000428;  /* fallback for old browsers */
@@ -200,7 +201,7 @@ footer p {
   background-blend-mode:lighten;
 }
 .cloud{
-  background-image: url('/images/clouds.jpg');
+  background-image: url('/images/cloud.jpg');
 }
 .cloud-card{
   background: #DA4453;  /* fallback for old browsers */
@@ -241,15 +242,18 @@ footer p {
 }
 @media only screen and (max-width: 768px) {
 .card{
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-top: 7%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 5%;
   }
 .location .city {
-  font-size : 32px;
+  font-size : 27px;
 }
 .current .temp{
-  font-size : 80px;
+  font-size : 75px;
+}
+.current .weather{
+  font-size: 35px;
 }
 footer{
   margin-top: 0;
@@ -260,9 +264,10 @@ footer p{
   font-size:10px;
 }
 .app-wrap{
-  padding-top: 2%;
+  padding-top: 0.2%;
   padding-bottom: 2px;
   margin-bottom: 0;
+  overflow-y:overlay;
 }
 }
 
