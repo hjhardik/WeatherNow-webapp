@@ -18,11 +18,11 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center center;
   overflow: hidden;   /*to make content stay in one page only and we dont need to have a scroll bar*/
   transition: background-image 1.5s;
   -webkit-transition: background-image 1.5s;
   background-repeat: no-repeat;
-
 }
 .app-wrap {
   flex-direction: row;
@@ -245,10 +245,10 @@ footer p {
 body{
   overflow-y: scroll;
   overflow-x: scroll;
-  background: cover;
+  background-repeat: no-repeat;
 }
 .app-wrap{
-  padding-top: 0.2%;
+  padding-top: 1%;
   padding-bottom: 2px;
   margin-bottom: 0;
 }
