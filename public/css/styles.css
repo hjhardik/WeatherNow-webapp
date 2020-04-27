@@ -14,15 +14,8 @@ body {
   font-family: sans-serif;
   background-image: url('/images/cleard.jpg');
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center center;
   overflow: hidden;   /*to make content stay in one page only and we dont need to have a scroll bar*/
-  transition: background-image 1.5s;
   -webkit-transition: background-image 1.5s;
-  background-repeat: no-repeat;
 }
 .app-wrap {
   flex-direction: row;
@@ -31,7 +24,6 @@ body {
   justify-content: center;
   align-content: center;
   margin-top: 5%;
-  background-repeat: no-repeat;
 }
 .card{
   margin: auto;
@@ -145,7 +137,8 @@ body {
   font-family: 'Manrope', sans-serif;
   font-weight: 500;
 }
-.current .wind{color: #FFF;
+.current .wind{
+  color: #FFF;
 font-size: 17px;
 font-family: 'Manrope', sans-serif;
 font-weight: 400;
@@ -243,15 +236,10 @@ footer p {
 }
 
 @media only screen and (max-width: 768px) {
-body{
-  overflow-y: scroll;
-  overflow-x: scroll;
-  background-repeat: no-repeat;
-}
 .app-wrap{
-  background-color: blue;
   padding-top: 2%;
   padding-bottom: 2px;
+  margin-bottom: 0;
 }
 .card{
   padding-top: 1%;
