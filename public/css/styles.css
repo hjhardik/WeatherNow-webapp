@@ -19,7 +19,10 @@ body {
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;   /*to make content stay in one page only and we dont need to have a scroll bar*/
+  transition: background-image 1.5s;
   -webkit-transition: background-image 1.5s;
+  background-repeat: no-repeat;
+
 }
 .app-wrap {
   flex-direction: row;
@@ -37,7 +40,6 @@ body {
   border-radius: 20px 20px;
   width: 80%;
   background: linear-gradient(to bottom, rgba(0,0,0, 0.5), rgba(0,0,0, 1));
-  overflow: overlay;
 }
 .search-container {
   width: 75%;
@@ -182,14 +184,9 @@ footer p {
   background-image: url('/images/cleard.jpg');
 }
 .cleard-card{
-  /* background: #9CECFB;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, rgba(0, 82, 212, 0.7), rgba(101, 199, 247, 0.7), rgba(156, 236, 251, 0.7));  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, rgba(0, 82, 212, 0.7), rgba(101, 199, 247, 0.7), rgba(156, 236, 251, 0.7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  */
   background: #03001e;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, rgba(253, 239, 249, 0.5),rgba(236, 56, 188, 0.5) ,rgba(115, 3, 192, 0.7), rgba(3, 0, 30, 0.7));  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, rgba(253, 239, 249, .5), rgba(236, 56, 188, .5) ,rgba(115, 3, 192,.7), rgba(3, 0, 30, .7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   transition: 0.4s ease-out;
   background-blend-mode: lighten;
 }
@@ -243,16 +240,23 @@ footer p {
   transition: 0.4s ease-out;
   background-blend-mode: lighten;
 }
+
 @media only screen and (max-width: 768px) {
 body{
   overflow-y: scroll;
   overflow-x: scroll;
+  background: cover;
+}
+.app-wrap{
+  padding-top: 0.2%;
+  padding-bottom: 2px;
+  margin-bottom: 0;
 }
 .card{
   padding-top: 1%;
   padding-bottom: 1%;
   margin-top: 5%;
-  }
+}
 .location .city {
   font-size : 27px;
 }
@@ -269,11 +273,6 @@ footer{
 }
 footer p{
   font-size:10px;
-}
-.app-wrap{
-  padding-top: 0.2%;
-  padding-bottom: 2px;
-  margin-bottom: 0;
 }
 }
 
