@@ -6,6 +6,7 @@ The front end is designed using HTML, CSS, Bootstrap and JavaScript and jQuery w
 
 When the permission to access location is granted by the user, the HTML5 Geolocation is used to detect the user location and then implemented through OpenWeather API to generate the current weather conditions:
 ![Location Granted](https://github.com/HardikJ7321/WeatherNow-webapp/blob/master/weatherphoto/granted.png)
+
 If the permission is not granted, it diplays :
 ![Location Denied](https://github.com/HardikJ7321/WeatherNow-webapp/blob/master/weatherphoto/denied.png)
 
